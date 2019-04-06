@@ -1,3 +1,210 @@
-body{
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin-top: 50px;
     background-color: lightblue;
+}
+
+.nav-item,
+.label,
+#hook {
+    text-align: center;
+}
+
+.label {
+    font-size: 50px;
+    font-family: 'Monofett', cursive;
+}
+
+
+#hook {
+    font-family: 'Rammetto One', cursive;
+    font-size: 40px;
+}
+
+#hook2>p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.gallery {
+    border-top: 3px dotted lightblue;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+}
+
+.nav-item a:hover {
+    border: 4px dashed coral;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+li {
+    width: 50%;
+    margin-left: 25%;
+}
+
+#bkg {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 255, 0, 0.1),
+    rgba(0, 0, 255, 0.3)), url('img/balloon-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.tvc {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    color: blue;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.jumbotron {
+    margin: 30px;
+}
+
+p {
+    margin: 0 0 10px 10px;
+}
+
+
+@media (max-width: 528px){
+    .jumbotron{
+        margin: 10px;
+    }
+    
+    #hook2 > p{
+        font-size:100%;
+    }
+}
+
+/*small +*/
+
+@media (min-width: 576px) {
+    p {
+        margin: 0 0 20px 20px;
+    }
+
+    .info {
+        border: 0px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 613px) {
+    .gallery {
+        font-size: 60px;
+    }
+}
+
+/*medium+ & Navbar breakpoint (expand display)*/
+
+@media (min-width: 768px) {
+    .nav-item a:hover {
+        background-color: lightblue;
+        border-radius: 3px;
+        border: none;
+    }
+    li {
+        width: 100%;
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    #hook {
+        font-size: 50px;
+    }
+    #hook2 {
+        font-size: 25px;
+    }
+}
+
+/* large + */
+
+@media (min-width: 992px) {
+    p {
+        margin: none;
+    }
+    .sh-right {
+        text-align: right;
+    }
+
+    .sh-left {
+        text-align: left;
+    }
+    h1 {
+        font-size: 140px;
+    }
+
+    h2 {
+        font-size: 75px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .info {
+        border: 4px solid coral;
+        border-radius: 0;
+    }
+}
+
+/* xlarge */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 200px;
+    }
+
+    h2 {
+        font-size: 90px;
+    }
+    #hook {
+        font-size: 70px;
+    }
+
+    #hook2 {
+        font-size: 30px;
+    }
+
 }
