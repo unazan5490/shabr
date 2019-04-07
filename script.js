@@ -1,12 +1,5 @@
 $(function() {
 
-    $(window).bind('beforeunload', function() {
-
-        //save info somewhere
-
-        alert('are you sure you want to leave?');
-
-    });
     $('.collapser').click(function() {
         var disp = $(this).html()
         var part = disp.substring(0, 4);
@@ -26,9 +19,21 @@ $(function() {
         }, 1000);
         $("#nav-1").collapse('hide');
     });
-
+    
+    //initiate pos to 0 if no value yet (new to site)
+    if (localStorage.getItem("pos") == null) {
+        localStorage.setItem('pos', $(window).scrollTop());
+    }
+    
+    //as page (re)loads, compare value to see if navbar needs to display
+    if (localStorage.getItem('pos') >= $(window).height() / 3) {
+        $(".navbar").addClass('bg-primary')
+    }
+    
+    //when user is scrolling through the page, check their new position
     $(document).scroll(function() {
-        var scroll = $(window).scrollTop();
+        localStorage.setItem('pos', $(window).scrollTop());
+        var scroll = localStorage.getItem('pos');
         if (scroll >= $(window).height() / 3) {
             $(".navbar").addClass('bg-primary')
         }
