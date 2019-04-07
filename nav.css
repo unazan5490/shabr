@@ -1,0 +1,13 @@
+.navbar {
+    padding: 0px 10px 0px 10px;
+}
+
+.nav-item a:hover {
+    background-color: darkblue;
+    border-radius: 3px;
+    border: none;
+}
+
+a {
+    color: white !important;
+}

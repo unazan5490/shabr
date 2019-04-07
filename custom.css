@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 
 * {
@@ -39,6 +39,7 @@ body {
 li {
     width: 50%;
     margin-left: 25%;
+    
 }
 
 #bkg {
@@ -82,7 +83,7 @@ h3 {
     font-family: Anton;
 }
 
-.jumbotron>h3{
+.jumbotron>h3 {
     font-family: Inconsolata;
 }
 
@@ -96,21 +97,9 @@ h4 {
     border-radius: 10px;
 }
 
-
 p {
     margin: 0 0 10px 10px;
     text-align: left;
-}
-
-.navbar {
-    padding: 0px 10px 0px 10px;
-}
-
-.nav-item a:hover {
-    border: 4px dashed coral;
-    background-color: transparent;
-    border-radius: 0;
-    text-align: center;
 }
 
 .quote {
@@ -126,6 +115,7 @@ p {
     margin-bottom: 10px;
 }
 
+/* xm only */
 
 @media (max-width: 575px) {
     .jumbotron {
@@ -134,9 +124,12 @@ p {
     .jumbotron>h1 {
         font-size: 35px;
     }
+    .jumbotron>h2 {
+        font-size: 6vw;
+    }
 }
 
-/*small +*/
+/* small + */
 
 @media (min-width: 576px) {
     p {
@@ -152,29 +145,21 @@ p {
     h3 {
         font-size: 30px;
     }
-    .jumbotron>h3 {
-        font-size: 20px;
+    .jumbotron>h2{
+        font-size: 35px;
     }
     .jumbotron>h1 {
         font-size: 50px;
     }
-
-    .jumbotron>h2 {
-        font-size: 40px;
-    }
+    .jumbotron>h3,
     h4 {
         font-size: 20px;
     }
 }
 
-/*medium+ & Navbar breakpoint (expand display)*/
+/* medium+ & Navbar breakpoint (expand display) */
 
 @media (min-width: 768px) {
-    .nav-item a:hover {
-        background-color: lightblue;
-        border-radius: 3px;
-        border: none;
-    }
     li {
         width: 100%;
         margin-left: 0;
@@ -183,7 +168,8 @@ p {
         font-size: 120px;
     }
 
-    h2 {
+    h2,
+    .gallery {
         font-size: 60px;
     }
     h3 {
@@ -192,14 +178,9 @@ p {
     h4 {
         font-size: 25px;
     }
-    #hook {
-        font-size: 50px;
-    }
+    #hook,
     .label {
         font-size: 50px;
-    }
-    .gallery {
-        font-size: 60px;
     }
 }
 
