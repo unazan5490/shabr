@@ -75,13 +75,27 @@ h3 {
     font-size: 20px;
 }
 
+.jumbotron>h3,
+.jumbotron>h2,
+.jumbotron>h1 {
+    text-align: left;
+    font-family: Anton;
+}
+
+.jumbotron>h3{
+    font-family: Inconsolata;
+}
+
 h4 {
     font-size: 14px;
 }
 
 .jumbotron {
-    margin: 30px;
+    margin: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
 }
+
 
 p {
     margin: 0 0 10px 10px;
@@ -98,19 +112,27 @@ p {
     border-radius: 0;
     text-align: center;
 }
-.quote{
+
+.quote {
     border: 2px black solid;
     margin-bottom: 20px;
+    background: linear-gradient( rgba(0, 0, 255, 0.1),
+    rgba(0, 0, 255, 0.1));
+    border-radius: 10px;
+    border-width: 5px;
 }
 
-.collapser{
+.collapser {
     margin-bottom: 10px;
 }
 
 
-@media (max-width: 528px) {
+@media (max-width: 575px) {
     .jumbotron {
         margin: 10px;
+    }
+    .jumbotron>h1 {
+        font-size: 35px;
     }
 }
 
@@ -130,7 +152,17 @@ p {
     h3 {
         font-size: 30px;
     }
-    h4{
+    .jumbotron>h3 {
+        font-size: 20px;
+    }
+    .jumbotron>h1 {
+        font-size: 50px;
+    }
+
+    .jumbotron>h2 {
+        font-size: 40px;
+    }
+    h4 {
         font-size: 20px;
     }
 }
