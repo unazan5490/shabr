@@ -1,3 +1,235 @@
-body{
-    background-color: lightblue;
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+* {
+    text-align: center;
+}
+
+.label {
+    font-size: 40px;
+    font-family: 'Monofett', cursive;
+}
+
+.primary {
+    font-size: 6vw;
+}
+
+.secondary {
+    font-size: 25px;
+}
+
+#hook {
+    font-family: 'Rammetto One', cursive;
+    font-size: 40px;
+}
+
+.gallery {
+    border-top: 3px dotted lightblue;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+}
+
+li {
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+#bkg {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 255, 0, 0.1),
+    rgba(0, 0, 255, 0.3)), url('img/balloon-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.tvc {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    color: blue;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.jumbotron>h3,
+.jumbotron>h2,
+.jumbotron>h1 {
+    text-align: left;
+    font-family: Anton;
+}
+
+.jumbotron>h3 {
+    font-family: Inconsolata;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.jumbotron {
+    margin: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0 0 10px 10px;
+    text-align: left;
+}
+
+.quote {
+    border: 2px black solid;
+    margin-bottom: 20px;
+    background: linear-gradient( rgba(0, 0, 255, 0.1),
+    rgba(0, 0, 255, 0.1));
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.collapser {
+    margin-bottom: 10px;
+}
+
+/* xm only */
+
+@media (max-width: 575px) {
+    .jumbotron {
+        margin: 10px;
+    }
+    .jumbotron>h1 {
+        font-size: 35px;
+    }
+    .jumbotron>h2 {
+        font-size: 6vw;
+    }
+}
+
+/* small + */
+
+@media (min-width: 576px) {
+    p {
+        margin: 0 0 20px 20px;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .jumbotron>h2{
+        font-size: 35px;
+    }
+    .jumbotron>h1 {
+        font-size: 50px;
+    }
+    .jumbotron>h3,
+    h4 {
+        font-size: 20px;
+    }
+}
+
+/* medium+ & Navbar breakpoint (expand display) */
+
+@media (min-width: 768px) {
+    li {
+        width: 100%;
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 120px;
+    }
+
+    h2,
+    .gallery {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    #hook,
+    .label {
+        font-size: 50px;
+    }
+}
+
+/* large + */
+
+@media (min-width: 992px) {
+    p {
+        margin: none;
+        font-size: 20px;
+    }
+    .sh-right {
+        text-align: right;
+    }
+
+    .sh-left {
+        text-align: left;
+    }
+    h1 {
+        font-size: 140px;
+    }
+
+    h2 {
+        font-size: 75px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .label {
+        font-size: 45px;
+    }
+    .gallery {
+        font-size: 70px;
+    }
+}
+
+/* xlarge */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 200px;
+    }
+
+    h2 {
+        font-size: 90px;
+    }
+    #hook {
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 40px;
+    }
 }
