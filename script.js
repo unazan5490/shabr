@@ -1,34 +1,39 @@
 $(function() {
-    
-    var toggled = false;
-    $('.collapser').click(function(){
+
+    $(window).bind('beforeunload', function() {
+
+        //save info somewhere
+
+        alert('are you sure you want to leave?');
+
+    });
+    $('.collapser').click(function() {
         var disp = $(this).html()
         var part = disp.substring(0, 4);
-        var rem = disp.substring(5,disp.length);
-        if (part == "Hide"){
+        var rem = disp.substring(5, disp.length);
+        if (part == "Hide") {
             $(this).html("Show " + rem);
-        }else{
+        }
+        else {
             $(this).html("Hide " + rem);
         }
     });
-    
-    $('.nav-item').click(function(){
+
+    $('a.nav-link').click(function() {
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top - 50
+        }, 1000);
         $("#nav-1").collapse('hide');
     });
-    
+
     $(document).scroll(function() {
         var scroll = $(window).scrollTop();
-        console.log(scroll)
-        if (scroll >= 650) {
-            if (toggled==false){
-                $(".navbar").toggleClass('bg-info')
-                toggled = true;
-            }
-        }else{
-            if (toggled==true){
-                toggled = false;
-                $(".navbar").toggleClass('bg-info')
-            }
+        if (scroll >= $(window).height() / 3) {
+            $(".navbar").addClass('bg-primary')
+        }
+        else {
+            $(".navbar").removeClass('bg-primary')
         }
     });
 });
