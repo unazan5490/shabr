@@ -39,7 +39,7 @@ body {
 li {
     width: 50%;
     margin-left: 25%;
-    
+
 }
 
 #bkg {
@@ -115,8 +115,8 @@ p {
     margin-bottom: 10px;
 }
 
-#copyright{
-    font-size: 25px !important;
+#copyright {
+    font-size: 25px;
 }
 
 /* xm only */
@@ -130,6 +130,14 @@ p {
     }
     .jumbotron>h2 {
         font-size: 6vw;
+    }
+    #copyright {
+        font-size: 15px;
+    }
+    .quote{
+        border: none;
+        border-radius: 0px;
+        background: none;
     }
 }
 
@@ -149,7 +157,7 @@ p {
     h3 {
         font-size: 30px;
     }
-    .jumbotron>h2{
+    .jumbotron>h2 {
         font-size: 35px;
     }
     .jumbotron>h1 {
