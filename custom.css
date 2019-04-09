@@ -115,6 +115,10 @@ p {
     margin-bottom: 10px;
 }
 
+#copyright{
+    font-size: 25px !important;
+}
+
 /* xm only */
 
 @media (max-width: 575px) {
