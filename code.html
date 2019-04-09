@@ -12,6 +12,7 @@
         body {
             padding-top: 50px;
         }
+
         .navbar-fixed-top {
             background-color: white;
         }
@@ -20,7 +21,7 @@
 
 <body>
 
-<!--
+    <!--
 The section below puts tabs at the top of the page.
 As long as your files are index.html and style.css,
 you don't need to change anything below.
@@ -31,10 +32,12 @@ If you have any other files, make sure you follow the structure below.
     <div class="container-fluid">
         <ul class="nav nav-tabs navbar-fixed-top">
             <li class="active"><a href="#index">index.html</a></li>
-            <li><a href="#style">style.css</a></li>
+            <li><a href="#style">custom.css</a></li>
+            <li><a href="#nav-style">nav.css</a></li>
+            <li><a href="#js">script.js</a></li>
         </ul>
 
-<!-- 
+        <!-- 
 URL structure:
 https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/index.html?footer=0
 
@@ -51,7 +54,13 @@ https://gist-it.appspot.com/github/bmuellerhstat/website-portfolio-example/raw/m
                 <script src="https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/index.html?footer=0"></script>
             </div>
             <div id="style" class="tab-pane fade">
-                <script src="https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/index.html?footer=0"></script>
+                <script src="https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/custom.css?footer=0"></script>
+            </div>
+            <div id="nav-style" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/nav.css?footer=0"></script>
+            </div>
+            <div id="js" class="tab-pane fade">
+                <script src="https://gist-it.appspot.com/github/unazan5490/shabr/raw/master/script.js?footer=0"></script>
             </div>
         </div>
     </div>
@@ -67,9 +76,9 @@ https://gist-it.appspot.com/github/bmuellerhstat/website-portfolio-example/raw/m
                 $(".act span").text(x);
                 $(".prev span").text(y);
             });
-            
+
             // custom code font-size (feel free to change this)
-            $('pre').css('font-size','16px');
+            $('pre').css('font-size', '16px');
         });
     </script>
 
