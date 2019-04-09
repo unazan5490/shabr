@@ -1,5 +1,5 @@
 $(function() {
-
+    
     $('.collapser').click(function() {
         var disp = $(this).html()
         var part = disp.substring(0, 4);
@@ -23,10 +23,10 @@ $(function() {
     function display() {
         var scroll = $(window).scrollTop()
         if (scroll >= $(window).height() / 3) {
-            $(".navbar").addClass('bg-primary')
+            $(".navbar").addClass('bg-dark')
         }
         else {
-            $(".navbar").removeClass('bg-primary')
+            $(".navbar").removeClass('bg-dark')
         }
     }
 

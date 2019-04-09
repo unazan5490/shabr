@@ -25,30 +25,9 @@ body {
     font-size: 25px;
 }
 
-#hook {
-    font-family: 'Rammetto One', cursive;
-    font-size: 40px;
-}
-
 .gallery {
-    border-top: 4px dotted blue;
     font-size: 40px;
     font-family: 'Monoton', cursive;
-}
-
-li {
-    width: 50%;
-    margin-left: 25%;
-
-}
-
-#bkg {
-    display: table;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( rgba(0, 255, 0, 0.1),
-    rgba(0, 0, 255, 0.3)), url('img/balloon-1.jpg') no-repeat center;
-    background-size: cover;
 }
 
 .tvc {
@@ -56,6 +35,48 @@ li {
     vertical-align: middle;
     display: table-cell;
     color: white;
+}
+
+.holder :not(i) {
+    text-align: left;
+    font-family: Anton;
+}
+
+.holder>h3 {
+    font-family: Inconsolata;
+}
+
+.jumbotron {
+    margin: 5px 15px 0px 15px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.quote {
+    border: 2px black solid;
+    background: lightblue;
+    border-radius: 10px;
+    border-width: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.equal {
+    margin-bottom: 20px;
+}
+
+.collapser {
+    margin-bottom: 10px;
+}
+
+.form-control{
+    width:100%;
+    margin-left: 0%;
+}
+
+li {
+    width: 50%;
+    margin-left: 25%;
 }
 
 h1 {
@@ -76,25 +97,8 @@ h3 {
     font-size: 20px;
 }
 
-.jumbotron>h3,
-.jumbotron>h2,
-.jumbotron>h1 {
-    text-align: left;
-    font-family: Anton;
-}
-
-.jumbotron>h3 {
-    font-family: Inconsolata;
-}
-
 h4 {
     font-size: 14px;
-}
-
-.jumbotron {
-    margin: 5px 15px 0px 15px;
-    border-radius: 10px;
-    background-color: lightgray;
 }
 
 p {
@@ -102,28 +106,25 @@ p {
     text-align: left;
 }
 
-.quote {
-    border: 2px black solid;
-    background: lightblue;
-    border-radius: 10px;
-    border-width: 5px;
-    width:100%;
-    height:100%;
+#bkg {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 255, 0, 0.1),
+    rgba(0, 0, 255, 0.3)), url('img/balloon-1.jpg') no-repeat center;
+    background-size: cover;
 }
 
-.equal{
-    margin-bottom: 20px;
+#hook {
+    font-family: 'Rammetto One', cursive;
+    font-size: 40px;
 }
 
-.collapser {
-    margin-bottom: 10px;
+#blue {
+    background-color: lightblue !important;
 }
 
-#blue{
-    background-color:lightblue !important;
-}
-
-#white{
+#white {
     background-color: lightcoral;
 }
 
@@ -131,38 +132,32 @@ p {
     font-size: 25px;
 }
 
-#exampleInputEmail1 {
-    /*text-align: center;*/
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
-
 /* xm only */
 
 @media (max-width: 575px) {
+    br {
+        display: none;
+    }
     .jumbotron {
         margin: 10px;
     }
-    .jumbotron>h1 {
+    .holder>h1 {
         font-size: 35px;
     }
-    .jumbotron>h2 {
+    .holder>h2 {
         font-size: 6vw;
     }
     #copyright {
         font-size: 15px;
-    }
-    .quote {
-        border: none;
-        border-radius: 0px;
-        background: none;
     }
 }
 
 /* small + */
 
 @media (min-width: 576px) {
+    br {
+        display: none;
+    }
     p {
         margin: 0 0 20px 20px;
     }
@@ -176,13 +171,13 @@ p {
     h3 {
         font-size: 30px;
     }
-    .jumbotron>h2 {
+    .holder>h2 {
         font-size: 35px;
     }
-    .jumbotron>h1 {
+    .holder>h1 {
         font-size: 50px;
     }
-    .jumbotron>h3,
+    .holder>h3,
     h4 {
         font-size: 20px;
     }
@@ -191,6 +186,9 @@ p {
 /* medium+ & Navbar breakpoint (expand display) */
 
 @media (min-width: 768px) {
+    br {
+        line-height: 1.2em;
+    }
     li {
         width: 100%;
         margin-left: 0;
@@ -218,6 +216,9 @@ p {
 /* large + */
 
 @media (min-width: 992px) {
+    br {
+        display: block;
+    }
     p {
         margin: none;
         font-size: 20px;

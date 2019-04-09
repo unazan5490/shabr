@@ -70,7 +70,7 @@
 
 
     <!-- slideshow carousel, displays all images -->
-    <div class="jumbotron" style="margin-top:10px; magin-bottom:5px;">
+    <div class="container" style="margin-top:10px; magin-bottom:5px;">
         <div>
             <h2 id="hook">Fun for Everyone</h2>
         </div>
@@ -79,7 +79,7 @@
         <h4>Fun for both adults and kids. All are welcome!</h4>
         <h4>Afraid of heights?</h4>
         <h4>You won't be after you slow-dance with the sky.</h4>
-
+        <hr>
         <div id="Gallery" class="carousel slide" data-ride="carousel">
             <div class="label gallery"> Our Gallery</div>
             <ol class="carousel-indicators">
@@ -156,40 +156,37 @@
                     Just a few of our happy customers
                 </h2>
                 <div class="row">
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
-                            <p style="margin-top: 10px">"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!"</p>
+                            <p style="margin-top: 10px">"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!"</p><br>
                             <p style="text-align:right; margin-right:10px; color:green">-- Joan H. <i class="fas fa-user-shield"></i></p>
                         </div>
                     </div>
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
                             <p style="margin-top: 10px">"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR."</p><br>
                             <p style="text-align:right; margin-right:10px; color:blue">-- Marsha N. <i class="fas fa-user-shield"></i></p>
                         </div>
                     </div>
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
                             <p style="margin-top: 10px">"Thanks so much for making our experience so perfect. I definitely want to go back again!</p><br>
                             <p style="text-align:right; margin-right:10px; color:darkblue">-- Linda T. <i class="fas fa-user-shield"></i></p>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
                             <p style="margin-top: 10px">"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!"</p><br>
                             <p style="text-align:right; margin-right:10px; color:gray">--Tammy P. <i class="fas fa-user-shield"></i></p>
                         </div>
                     </div>
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
                             <p style="margin-top: 10px">"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!"</p>
                             <p style="text-align:right; margin-right:10px; color:brown">-- Ethel E. <i class="fas fa-user-shield"></i></p>
                         </div>
                     </div>
-                    <div class="col-md-4 equal">
+                    <div class="col-md-6 col-lg-4 equal">
                         <div class="quote">
                             <p style="margin-top: 10px">"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!"</p>
                             <p style="text-align:right; margin-right:10px; color:blue">-- Mary C. <i class="fas fa-user-shield"></i></p>
@@ -200,35 +197,39 @@
         </div>
     </div>
 
-    <div id="Contact">
-        <div class="jumbotron">
-            <h1>Contact Us ?</h1>
-            <h2>We’d love to hear from you <i class="fas fa-address-book"></i></h2>
-            <h3><strong>SHABR</strong>, Inc.</h3>
-            <h3>1234 Shabr Road Somewhere, OT 80013</h3>
-            <h3><i class="fas fa-mobile-alt"></i> Phone (555) 555-1234</h3>
+    <div id="Contact" class="jumbotron">
+        <div class="row">
+            <div class="col-lg-7 col-md-8">
+                <div class="holder">
+                    <h1>Contact Us ?</h1>
+                    <h2>We’d love to hear from you <i class="fas fa-address-book"></i></h2>
+                    <h3><strong>SHABR</strong>, Inc.</h3>
+                    <h3>1234 Shabr Road Somewhere, OT 80013</h3>
+                    <h3><i class="fas fa-mobile-alt"></i> Phone <span style="color:darkblue;">(555) 555-1234</span></h3>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail">Sign up for SHABR</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="telephone">Telephone Number</label>
+                        <input id="telephone" class="form-control" aria-describedby="tel" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter Your Phone Number" required>
+                        <small id="tel" class="form-text text-muted">Format : XXX-XXX-XXXX</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 
-    <form>
-        <div class="col-xs-4">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Sign up for Email Updates</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-        </div>
-        <div class="form-group form-check">
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="checkbox">I Agree to The Terms and Conditions</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-    <div style="background-color:lightgray; padding:10px;">
-        <h3 id="copyright">Copyright &copy; 2016 &nbsp;|&nbsp; <em>SHABR</em></h3>
+    <div style="background-color:gray; padding:20px; margin-top:5px">
+        <small>Copyright &copy; 2016 &nbsp;|&nbsp; <em>SHABR</em></small>
+        <br style="display:block !important;">
+        <small>Skydance Hot Air Balloon Inc.</small>
     </div>
+
 </body>
 
 </html>
