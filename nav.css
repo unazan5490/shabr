@@ -7,3 +7,7 @@
     border-radius: 3px;
     border: none;
 }
+
+.navbar-brand {
+    color: white !important;
+}
