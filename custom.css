@@ -74,6 +74,14 @@ body {
     margin-left: 0%;
 }
 
+.active{
+    color: coral !important;
+}
+
+li :not(.active){
+    color: white !important;
+}
+
 li {
     width: 50%;
     margin-left: 25%;

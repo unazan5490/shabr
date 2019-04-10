@@ -3,11 +3,7 @@
 }
 
 .nav-item a:hover {
-    background-color: darkblue;
+    background-color: skyblue;
     border-radius: 3px;
     border: none;
-}
-
-a {
-    color: white !important;
 }

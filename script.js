@@ -12,7 +12,7 @@ $(function() {
         }
     });
 
-    $('a.nav-link').click(function() {
+    $('a.nav-link, .navbar-brand').click(function() {
         var link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top - 50
@@ -22,7 +22,7 @@ $(function() {
 
     function display() {
         var scroll = $(window).scrollTop()
-        if (scroll >= $(window).height() / 3) {
+        if (scroll) {
             $(".navbar").addClass('bg-dark')
         }
         else {
